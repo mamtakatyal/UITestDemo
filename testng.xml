@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestSuit">
+	 <parameter name="user" value="mamta"/>
+   	 <parameter name="pass" value="admin"/>
+ 	 <test thread-count="5" name="Sanity Tests">
+      	<classes>
+     		 <class name="TestNGProj.Test001"/>
+    	</classes>
+  	</test> <!-- Test -->
+  	<test thread-count="5" name="Regression Tests">
+   		 <classes>
+    		 <class name="TestNGProj.Test002"/>
+   		 </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
